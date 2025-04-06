@@ -45,8 +45,9 @@ Add a basic HTML file named `index.html`. Example:
 In the same directory, add a `Dockerfile` with the following content:
 
 ```dockerfile
-FROM nginx:alpine
+FROM nginx:latest
 COPY index.html /usr/share/nginx/html/index.html
+PORT 80
 ```
 
 This Dockerfile uses the official NGINX image and serves your HTML file.
